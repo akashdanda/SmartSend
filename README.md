@@ -35,21 +35,12 @@ Edit
    cd backend
 Install dependencies:
 
-bash
-Copy
-Edit
 npm install
 Create a .env file in the backend folder with your OpenAI API key:
 
-ini
-Copy
-Edit
 API_KEY=your_openai_api_key_here
 Start the backend server:
 
-bash
-Copy
-Edit
 node server.js
 The server will run by default on http://localhost:3000.
 
