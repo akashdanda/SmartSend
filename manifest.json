@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "SmartSend",
+  "version": "1.0",
+  "description": "AI driven Gmail Response",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://mail.google.com/"
+  ],
+  "action": {
+    "default_icon": {
+        "16": "email_logo.png",
+        "32": "email_logo.png",
+        "48": "email_logo.png",
+        "128": "email_logo.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Generate GPT Reply"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
