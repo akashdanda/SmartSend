@@ -1,4 +1,4 @@
-# My Chrome Extension with Secure Backend
+# Smart Send README
 
 This project contains two parts:
 
@@ -20,10 +20,6 @@ project-root/
 │ ├── popup.js
 │ └── ...
 
-yaml
-Copy
-Edit
-
 ---
 
 ## Setup Instructions
@@ -31,16 +27,15 @@ Edit
 ### Backend
 
 1. Navigate to the `backend` folder:
-   ```bash
    cd backend
+
 Install dependencies:
-
 npm install
+
 Create a .env file in the backend folder with your OpenAI API key:
-
 API_KEY=your_openai_api_key_here
-Start the backend server:
 
+Start the backend server:
 node server.js
 The server will run by default on http://localhost:3000.
 
